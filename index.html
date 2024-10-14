@@ -1,0 +1,534 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title> Javelin theme Shop </title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="styling.css">
+
+
+     </head>
+    
+    
+    <body>
+
+        <nav class="navbar">
+    
+    
+            <div class="logo">
+                <h1>JEVELIN</h1>
+            </div>
+    
+    
+            <div class="menuitems">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Categories</a></li>
+                    <li><a href="#products">Products</a></li>
+                    <li><a href="#">Subscribe</a></li>
+                    <li><a href="#">Partners</a></li>
+    
+                    <li class="drop"><a href="#">Shop<i class="fa fa-caret-down"></i></a>
+                        <div class="submenu" >
+                            <ul>
+                                <li><a href="#">Clothing</a></li>
+                                <li><a href="#">Accessories</a></li>
+                                <li><a href="#">Shirts</a></li>
+                                <li><a href="#">Shorts</a></li>
+                                <li><a href="#">Shoes</a></li>
+                            </ul>
+                        </div> 
+                    </li>
+    
+                    <li><a href="#">Shipment</a></li>
+                </ul>
+            </div>
+
+                    
+                        <div class="icons">
+                            <a href="#">
+                                <i class="fa fa-shopping-cart" style="font-size:24px" id="cat">
+                                    <div class="matter">
+                                      no products in the cart
+                                    </div>
+                                </i>
+                            </a>
+                            <a href="#"><i class="fa fa-search" style="font-size: 24px;" id="srch"></i></a>
+                            <a href="https://www.facebook.com/login.php/" target="_blank"><i class="fa fa-facebook-f" style="font-size:24px"></i></a>
+                            <a href="https://x.com/home" target="_blank"><i class="fa fa-twitter" style="font-size:24px"></i></a>   
+                        </div>
+                
+        </nav>
+    
+        <section class="background1">
+            
+            <div class="text">
+    
+                <h1 style="color: whitesmoke;">Upto to 70% off </h1> 
+            </div> <br> <br>
+
+            <div class="arrows">
+                <div class="left">
+                    <
+                    <div class="imag1">
+        
+                    </div>
+                </div>
+                <div class="right">
+                    >
+                    <div class="imag2">
+        
+                    </div>
+                </div>
+            </div>
+
+            <div class="txt2">
+                <h3 style="color: lightgray;"> Discounts on fall Collections </h3>
+            </div>
+
+
+            <br> <br> <br> 
+    
+            <button style="color: white;" id="btn1">WHATS NEW</button>
+            <button style="color: white; background-color: red;"> PURCHASE THEME <i class="fa fa-tag" style="font-size:16px"></i></button>
+    
+        </section> 
+        <br>
+        <br>
+        <br>
+
+
+    
+    <section class="shop" style="overflow: hidden;">
+            <div class="clothing">
+
+                <a href="" target="_blank"><h2 class="clothes" style="color: white;">Clothings <span>5</span></h2></a>
+            </div>
+        
+            <div class="Accessories">
+                <a href="" target="_blank"><h2 class="access">Accessories <span >4</span></h2></a>
+            </div>
+    </section> 
+
+    <br> <br> <br> <br> <br>
+
+    
+    <section class="timer">
+
+            <div class="timer-in">
+                    <h3>Sale for this fall Starts in</h3>
+            </div>
+                <br> 
+                <br>
+                <br>
+                <div class="time">
+                    <div class="num">
+                        <h1>00</h1>
+                        <h4>WEEKS</h4>
+                    </div>
+                    <div class="num">
+                        <h1>00</h1>
+                        <h4>DAYS</h4>
+
+                    </div>
+                    <div class="num">
+                        <h1>00</h1>
+                        <h4>HOURS</h4>
+                    </div>
+                    <div class="num">
+                        <h1>00</h1>
+                        <h4>MINUTES</h4>
+                    </div>
+                    <div class="num">
+                        <h1>00</h1>
+                        <h4>SECONDS</h4>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section> 
+
+
+    <br> <br> <br> <br> <br> <br>
+    
+    <main class="context">
+            <h1 style="font-size: 30px;">Check out what's new <br><h2 style="color: lightgray;">  Latest of the trends we have to offer</h2></h1>
+            <br> <br> <br>
+
+
+            <div class="types">
+                <button class="btn active " onclick="filterSelection('all')">All</button>
+                <button class="btn " onclick="filterSelection('accessories')">Accessories</button>
+                <button class="btn " onclick="filterSelection('Clothings')">Clothings</button>
+                <button class="btn " onclick="filterSelection('shirts')">Shirts</button>
+                <button class="btn " onclick="filterSelection('Shoes')">Shoes</button>
+                <button class="btn " onclick="filterSelection('shorts')">Shorts</button>
+             </div> <br> <br>
+
+            <div class="products" id="products">
+
+                <div class="filterDiv Clothings accessories">
+                    <div class="tag">
+                        <img src="sale-tag.png" alt="tag" height="50px" width="50px">
+                    </div>
+                    
+                    <div class="imageBox">
+                        <div class="imageInn">
+                          <img src="bag1.png" alt="Default Image" width="200px" height="200px">
+                        </div>
+                        <div class="hoverImg">
+                          <img src="bag2.png" alt="Profile Image" width="200px" height="200px">
+                        </div>
+                      </div>
+                      <br>
+                      <h3>PowerLook Bag </h3>
+                    <div class="details1">
+                        <h4 style="color: lightgray;">Clothings, Shirts</h4>
+                          <a href="#"><i class="fa fa-shopping-cart" style="font-size:24px"></i></a> 
+                    </div> <br> <hr> <br>
+                    <div class="price">
+                     <strong>$12</strong>
+                        </div>
+                </div>
+                <div class="filterDiv accessories">
+                    <div class="imageBox">
+                        <div class="imageInn">
+                          <img src="watch1.png" alt="Default Image" width="200px" height="200px">
+                        </div>
+                        <div class="hoverImg">
+                          <img src="Screenshot 2024-10-02 190839 - Copy.png" alt="Profile Image" width="200px" height="200px">
+                        </div>
+                    </div>
+                       <br> 
+                    <h3>Pagani Watch </h3>
+                    <div class="details1">
+                        <h4 style="color: lightgray;">Clothings, Suits</h4>
+                          <a href="#"><i class="fa fa-shopping-cart" style="font-size:24px"></i></a> 
+                    </div> <br> <hr> <br>
+                    <div class="price">
+                        <s>$ 90</s> <strong>$32</strong>
+                        </div>
+                </div>
+            
+                <div class="filterDiv Clothings shorts">
+                    <div class="tag">
+                        <img src="sale-tag.png" alt="tag" height="50px" width="50px">
+                    </div>
+                    <div class="imageBox">
+                        <div class="imageInn">
+                          <img src="Screenshot 2024-09-30 150111.png" alt="Default Image" width="200px" height="200px">
+                        </div>
+                        <div class="hoverImg">
+                          <img src="Screenshot 2024-09-30 150052.png" alt="Profile Image" width="200px" height="200px">
+                        </div>
+                      </div>
+            <br>
+                    <h3>PowerLook short </h3>
+                    <div class="details1">
+                        <h4 style="color: lightgray;">Clothings, Shirts</h4>
+                          <a href="#"><i class="fa fa-shopping-cart" style="font-size:24px"></i></a> 
+                    </div> <br> <hr> <br>
+                    <div class="price">
+                     <strong>$12</strong>
+                        </div>
+                </div>
+            
+                <div class="filterDiv Clothings tshirts">
+
+                    <div class="imageBox">
+                        <div class="imageInn">
+                          <img src="Screenshot 2024-09-30 145928.png" alt="Default Image" width="200px" height="200px">
+                        </div>
+                        <div class="hoverImg">
+                          <img src="Screenshot 2024-09-30 145901.png" alt="Profile Image" width="200px" height="200px">
+                        </div>
+                    </div>
+                       <br>
+                    <h3>Pagani T-shirt </h3>
+                    <div class="details1">
+                        <h4 style="color: lightgray;">Clothings, Suits</h4>
+                          <a href="#"><i class="fa fa-shopping-cart" style="font-size:24px"></i></a> 
+                    </div> <br> <hr> <br>
+                    <div class="price">
+                        <s>$ 90</s> <strong>$32</strong>
+                        </div>
+                </div>
+            
+                <div class="filterDiv accessories">
+                    <div class="tag">
+                        <img src="sale-tag.png" alt="tag" height="50px" width="50px">
+                    </div>
+                    
+                    <img src="Screenshot 2024-09-30 150024.png" alt="p1" width="200px" height="200px">  <br>
+                    <br>
+                    <h3> Cooling Glasses </h3>
+                    <div class="details1">
+                        <h4 style="color: lightgray;">Fashion, Shoes</h4>
+                          <a href="#"><i class="fa fa-shopping-cart" style="font-size:24px"></i></a> 
+                    </div> <br> <hr> <br>
+                    <div class="price">
+                    <s>$ 24</s> <strong>$12</strong>
+                    </div>
+                </div>
+                     
+                <div class="filterDiv accessories">
+                    <div class="tag">
+                        <img src="sale-tag.png" alt="tag" height="50px" width="50px">
+                    </div>
+                    
+                    <div class="imageBox">
+                        <div class="imageInn">
+                          <img src="hat1.png" alt="Default Image" width="200px" height="200px">
+                        </div>
+                        <div class="hoverImg">
+                          <img src="hat2.png" alt="Profile Image" width="200px" height="200px">
+                        </div>
+                    </div> <br>
+            
+                    <h3>Winter Cotton hat  </h3>
+                    <div class="details1">
+                        <h4 style="color: lightgray;">Clothings, Shirts</h4>
+                          <a href="#"><i class="fa fa-shopping-cart" style="font-size:24px"></i></a> 
+                    </div> <br> <hr> <br>
+                    <div class="price">
+                        <strong>$12</strong>
+                           </div>
+                </div>
+            
+                <div class="filterDiv shirts">
+                    <div class="imageBox">
+                        <div class="imageInn">
+                          <img src="img1.png" alt="Default Image" width="200px" height="200px">
+                        </div>
+                        <div class="hoverImg">
+                          <img src="Screenshot 2024-09-30 150000.png" alt="Profile Image" width="200px" height="200px">
+                        </div>
+                    </div> <br> 
+            
+                    <h3>Coral Beach Shirt </h3>
+                    <div class="details1">
+                        <h4 style="color: lightgray;">Accessories, Shirts</h4>
+                          <a href="#"><i class="fa fa-shopping-cart" style="font-size:24px"></i></a> 
+                    </div> <br> <hr> <br>
+                    <div class="price">
+                        <strong>$75</strong>
+                           </div>
+                </div>
+            
+                <div class="filterDiv Shoes">
+                    <img src="pexels-melvin-buezo-1253763-2529148.jpg" alt="p1" width="200px" height="200px"> <br> <br>
+                    <h3>Casual Shoes </h3> 
+                    <div class="details1">
+                        <h4 style="color: lightgray;">Clothings, T-Shirts</h4>
+                          <a href="#"><i class="fa fa-shopping-cart" style="font-size:24px"></i></a> 
+                    </div> <br> <hr> <br>
+                    <div class="price">
+                        <strong>$50</strong>
+                           </div>
+                </div>
+            
+            
+            </div> 
+
+    </main> <br> <br>
+
+        <script>
+            filterSelection("all")
+            function filterSelection(c) {
+              var x, i;
+              x = document.getElementsByClassName("filterDiv");
+              if (c == "all") c = "";
+              for (i = 0; i < x.length; i++) {
+                w3RemoveClass(x[i], "show");
+                if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
+              }
+            }
+            
+            function w3AddClass(element, name) {
+              var i, arr1, arr2;
+              arr1 = element.className.split(" ");
+              arr2 = name.split(" ");
+              for (i = 0; i < arr2.length; i++) {
+                if (arr1.indexOf(arr2[i]) == -1) {element.className += " " + arr2[i];}
+              }
+            }
+            
+            function w3RemoveClass(element, name) {
+              var i, arr1, arr2;
+              arr1 = element.className.split(" ");
+              arr2 = name.split(" ");
+              for (i = 0; i < arr2.length; i++) {
+                while (arr1.indexOf(arr2[i]) > -1) {
+                  arr1.splice(arr1.indexOf(arr2[i]), 1);     
+                }
+              }
+              element.className = arr1.join(" ");
+            }
+            
+            // Add active class to the current button (highlight it)
+            var btnContainer = document.getElementById("myBtnContainer");
+            var btns = btnContainer.getElementsByClassName("btn");
+            for (var i = 0; i < btns.length; i++) {
+              btns[i].addEventListener("click", function(){
+                var current = document.getElementsByClassName("active");
+                current[0].className = current[0].className.replace(" active", "");
+                this.className += " active";
+              });
+            }
+            </script>
+    </main>
+
+    <footer>
+        <article class="foot1">
+            <div class="cont1">
+                <h1>Subscribe to get discount <br> coupons & new offers!</h1> <br> <br>
+            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy  <br>nibh euismod tincidunt erat volutpat. </p>
+            </div>
+             <br> <br> 
+    
+            <div class="subs">
+                <input type="email" id="email" placeholder="Enter your email"> 
+                <div>
+                    <input type="submit" value="Subscribe" id="in">
+                </div>
+
+            </div>
+             <br> <br>
+             
+             <h3>Follow us on </h3>
+             <div class="social"> <br> 
+                <ul>
+                        <li>
+                            <span><a href="#"><i class="fa fa-facebook-f" style="font-size:24px"></i></a></span>
+                        </li>
+                        <li>
+                            <span>
+                                <a href="#"><i class="fa fa-twitter" style="font-size:24px"></i></a>
+                            </span>
+                        </li>    
+                        <li>
+                            <span>
+                                <a href="#"><i class="fa fa-youtube-play" style="font-size:24px"></i></a>
+                            </span>
+                        </li>
+                </ul>
+             </div>
+            </article>
+        <br> <br>
+    
+        <article class="foot2">
+    
+            <div class="payment">
+                <i class="fa fa-credit-card" style="font-size:44px"></i> <br> <br> <br>
+                <h2 style="color: black;">Payment method</h2> <br> 
+                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, <br>
+    
+                    sed diam nonummy nibh euismod tincidunt ut laoreet <br>
+                    
+                    dolore magna aliquam erat volutpat.</p> <br> <br>
+    
+                    <span>
+                        <i class="fa fa-cc-stripe" style="font-size:30px"></i>
+                        <i class="fa fa-cc-mastercard" style="font-size:30px"></i>
+                        <i class="fa fa-cc-visa" style="font-size:30px"></i>
+                        <i class="fa fa-cc-amex" style="font-size:30px"></i>
+                    </span>
+            </div> 
+
+            
+    
+            <div class="shipping">
+                
+                <i class="fa fa-plane" style="font-size:44px"></i> <br>
+                 <br> <br>
+                <h2 style="color: black;">Shipment and delivery</h2> <br>
+                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, <br>
+    
+                    sed diam nonummy nibh euismod tincidunt ut laoreet <br>
+                    
+                    dolore magna aliquam erat volutpat.</p> <br>
+                    <h4> <strong style="color: red;"> > </strong> Lorem ipsum dolor sit amet </h4> <br>
+                    <h4> <strong style="color: red;"> > </strong> Morbi rutrum ex ultricies, mollis magna sed </h4>
+            </div>
+
+        </article> 
+        
+        <br> <br> <br>
+
+        <article class="foot3">
+
+
+            <div class="sect1">
+                <div class="imagee">
+                    <img src="Footer_logo.png" alt="footlogo">
+                </div>
+                 <br> <br> 
+                <p>
+                    Duis semper mauris vitae purus rhoncus suscipit.Nunc  <br>  dictum dapibus tellus, at viverra risus pharetra id.  Nulla <br> facilisi. Ut mollis et augue non gravida.
+                </p>
+            </div>
+
+            <div class="sect2">
+                <h1 style="font-weight: lighter;">Products</h1> <br> <br>
+                <a href="https://jevelin.shufflehound.com/shop1/product/havanna-shirt/" target="_blank">
+                    <div class="p1">
+                        <img src="img1.png" alt="shirt" width="70px" height="70px"> <br>
+                        <div>
+                            <h3>Havanna shirt</h3> <br>
+                            <h3><pre><s>$18</s>  $10</pre></h3>
+                        </div>
+      
+                    </div>
+                </a> 
+                
+                <br> <br> 
+
+                <a href="#">
+                    <div class="p2">
+                        <img src="bag1.png" alt="shirt" width="70px" height="70px"> <br>
+                        <div>
+                            <h3>Havanna shirt</h3> <br>
+                            <h3><pre><s>$12</s>  $8 </pre></h3>
+                        </div>
+                    </div>
+                </a>
+            </div>
+    
+    
+            <div class="sect3">
+                <h1 style="font-weight: lighter;"> Top Rated Products</h1> <br> <br>
+                <a href="#">
+                    <div class="p1">
+                        <img src="hat1.png" alt="shirt" width="65px" height="65px"> <br>
+                        <div>
+                            <h3>Havanna shirt</h3> <br>
+                        <h3><pre><s>$22</s>  $10</pre></h3>
+                        </div>
+                    </div>
+                </a> <br> <br>
+                <a href="#">
+                    <div class="p2">
+                        <img src="watch1.png" alt="shirt" width="65px" height="65px"> <br>
+                        <div>
+                            <h3>Havanna shirt</h3> <br>
+                            <h3><pre><s>$18</s>  $12</pre></h3>
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+            
+        </article>
+        
+        <div class="last">
+            <h4 style="text-align: center;">WordPress Theme built by <a href="https://shufflehound.com/" target="_blank">Shufflehound</a></h4>
+        </div>
+    </footer>
+
+
+</body>
+
+</html>
