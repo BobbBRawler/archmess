@@ -13,7 +13,7 @@
     flex-direction: row;
 
     background-color: white;
-    justify-content: space-evenly;
+    justify-content: space-around;
     align-content: center;
     padding: 2px;
     width: 100%;
@@ -88,12 +88,23 @@
   display: block;
   align-items: center;
   padding-top: 35px;
+
 }
 .icons a{
   text-decoration: none;
   color:  black;
   margin: 5px;
   padding: 7px;
+}
+
+.details1 i{
+  border: 1px solid lightgray;
+  border-radius: 50%;
+  padding: 8px;
+}
+.details1 i:hover{
+  background-color: orangered;
+  color: whitesmoke;
 }
 
 
@@ -468,8 +479,15 @@ color: white;
     font-family:Arial, Helvetica, sans-serif;
     padding: 20px;
 }
-.context h1,h2{
+.context h1{
   font-family:Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  font-size: 30px;
+}
+.context h2{
+  font-family:Arial, Helvetica, sans-serif;
+  font-weight: lighter;
+  font-size: 25px;
 }
 .types{
     display: flex;
@@ -680,16 +698,24 @@ color: white;
     height: 80vh;
     justify-content: center;
     padding: 50px;
-    background-color: rgba(228, 225, 225, 0.531);
+    background-color: rgba(242, 241, 241, 0.531);
     font-family:Arial, Helvetica, sans-serif
   }
+  .payment h2{
+    font-size: 18px;
+  }
+  .shipping h2{
+    font-size: 18px;
+  } 
   .payment p{
-    color: rgb(182, 181, 181);
+    color: rgb(160, 158, 158);
     font-size: 15px;
+    word-spacing: 3px;
   }
   .shipping p{
-    color: rgb(182, 181, 181);
+    color: rgb(160, 158, 158);
     font-size: 15px;
+    word-spacing: 3px;
   }
 
   .shipping{
@@ -700,9 +726,8 @@ color: white;
     align-content: center;
     height: 80vh;
     justify-content: center;
-
     padding: 50px;
-    background-color: rgba(228, 225, 225, 0.531);
+    background-color: rgba(242, 241, 241, 0.531);
     font-family:Arial, Helvetica, sans-serif
   }
   .shipping h4{
@@ -816,7 +841,7 @@ color: white;
     top: 38px;
     right: 10px;
     width:250px;
-    padding: 15px;
+    padding: 15px;    
     font-family:Arial, Helvetica, sans-serif;
   }
   .filterDiv .tag{
@@ -834,6 +859,7 @@ color: white;
   }
 
 @media screen and (width<600px){
+
   .navbar{
     width:100%;
     flex-direction: column;
@@ -842,14 +868,14 @@ color: white;
     filter:brightness(2);
     position: sticky;
     top: 0px;
-    overflow-x: none;
   }
-
   .menuitems{
     display: none;
   }
   .background1{
     width: 100%;
+    overflow-x: hidden;
+    height: 80vh;
   }
   .shop{
     align-items: center;
@@ -857,11 +883,13 @@ color: white;
     justify-content: center;
     gap: 20px;
   }
+
   .clothing,.Accessories{
     width: 80%;
     align-items: center;
-    margin: 100px;
+    margin: 60px;
   }
+
   .timer{
     width:100%;
     height: max-content;
@@ -870,25 +898,32 @@ color: white;
     margin-left: 0%;
   }
   .time{
-    grid-template-columns: auto auto;
-    grid-template-rows: auto auto auto auto auto;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto auto auto auto;
   }
+ 
   .types{
     flex-wrap: wrap;
   }
+
   .products{
     grid-template-columns: auto;
     grid-template-rows: auto auto auto auto;
+    column-gap: 5px;
+
   }
+
   .foot2{
     flex-direction: column;
     height: max-content;
     align-items: center;
   }
+
   .payment,.shipping{
     width: max-content;
     flex-basis: 100%;
   }
+      
   .foot3{
     grid-template-rows: auto auto auto;
     height: max-content;
@@ -903,5 +938,11 @@ color: white;
   .last{
     width: 100%;
     text-align: center;
+  }
+}
+
+@media screen and (width<800px){
+  .icons{
+    visibility: hidden;
   }
 }
