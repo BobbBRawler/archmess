@@ -949,7 +949,7 @@ color: white;
     'sect2 sect2 sect2' 
     'sect3 sect3 sect3';
     height: max-content;
-    width: max-content;
+    width: 100%;
   }
 
   .sect1{
