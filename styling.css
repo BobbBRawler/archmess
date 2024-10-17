@@ -12,8 +12,8 @@
     display: flex;
     flex-direction: row;
     background-color: white;
-    justify-content: space-between;
-    align-content: center;
+    justify-content: space-around;
+    align-items: center;
     padding: 2px;
     width: 100%;
     height: 80px;
@@ -25,13 +25,14 @@
 
 .logo h1{
   padding-top: 30px;
-  padding-left: 50px;
-  padding-right: 230px;
+  padding-left: 20px;
+  padding-right: 140px;
 }
 
 .menuitems ul{
   display: flex;
   align-items: center;
+  flex-wrap: nowrap;
   justify-content: space-between;
 }
 .menuitems ul li{
@@ -52,7 +53,7 @@
 .submenu{
   display: none;
   position: absolute;
-  width: 200px;
+  width: 180px;
 }
 .submenu ul{
     background-color: black;
@@ -86,7 +87,7 @@
 .icons{
   display: block;
   align-items: center;
-  padding-top: 35px;
+  padding-top: 28px;
 
 }
 .icons a{
@@ -94,6 +95,7 @@
   color:  black;
   margin: 5px;
   padding: 7px;
+  padding-bottom: 5px;
 }
 
 .details1 i{
@@ -864,10 +866,10 @@ color: white;
 
   .navbar{
     width:100%;
-    content: inherit;
-    flex-direction: column;
-    flex-flow: row;
-    height: 15vh;
+    content:inherit;
+    justify-content: space-between;
+    flex-direction: row;
+    height: 13vh;
     filter:brightness(2);
     position: sticky;
     top: 0px;
@@ -875,11 +877,11 @@ color: white;
   .menuitems{
     display: none;
   }
-  .background1{
+ .background1{
     width: 100%;
     overflow-x: hidden;
     height: 80vh;
-  }
+  } 
   .shop{
     align-items: center;
     flex-direction: column;
@@ -888,9 +890,9 @@ color: white;
   }
 
   .clothing,.Accessories{
-    width: 80%;
+    width: 85%;
     align-items: center;
-    margin: 60px;
+    margin: 30px;
   }
 
   .timer{
@@ -903,6 +905,8 @@ color: white;
   .time{
     grid-template-columns: auto auto auto;
     grid-template-rows: auto auto auto auto;
+    width: fit-content;
+    margin-left: 120px;
   }
  
   .types{
@@ -930,7 +934,7 @@ color: white;
   .foot3{
     grid-template-rows: auto auto auto;
     height: max-content;
-    width: fit-content;
+    width: 100%;
   }
   .sect1,.sect2,.sect3{
     height: max-content;
@@ -945,8 +949,83 @@ color: white;
   }
 }
 
-@media screen and (width>600px) and (width<800px){
+
+@media screen and (width>=600px) and (width<800px){
   .icons{
-    visibility: hidden;
+    display: none;
+  }
+  .navbar{
+    width: 100%;
+    height: fit-content;
+    justify-content: left;
+    flex-wrap: wrap;
+  }
+  .background1{
+    width: 100%;
+    overflow-x: hidden;
+    height: 80vh;
+  }
+  .shop{
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+  }
+  .clothing,.Accessories{
+    width: 85%;
+    align-items: center;
+    margin: 20px;
+  }
+  .timer{
+    width:100%;
+    height: max-content;
+    align-content: center;
+    justify-content: center;
+    margin-left: 0%;
+  }
+  .time{
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto auto auto auto;
+    width: fit-content;
+    margin-left: 130px;
+  }
+ 
+  .types{
+    flex-wrap: wrap;
+  }
+
+  .products{
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto auto auto;
+    column-gap: 5px;
+
+  }
+
+  .foot2{
+    flex-direction: column;
+    height: max-content;
+    align-items: center;
+  }
+
+  .payment,.shipping{
+    width: max-content;
+    flex-basis: 100%;
+  }
+      
+  .foot3{
+    grid-template-rows: auto auto auto;
+    height: max-content;
+    width: 100%;
+  }
+  .sect1,.sect2,.sect3{
+    height: max-content;
+    padding:30px;
+  }
+  .p1,.p2{
+    flex-direction: column;
+  }
+  .last{
+    width: 100%;
+    text-align: center;
   }
 }
