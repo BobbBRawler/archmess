@@ -595,7 +595,7 @@ color: white;
         rgba(17, 18, 18, 0.85)), 
           url('pexels-cottonbro-6474915.jpg');
     width: 100%;
-    height: 90vh;
+    height: 105vh;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -864,6 +864,9 @@ color: white;
 
 @media screen and (width<600px){
 
+  html{
+    overflow-x: hidden;
+  }
   .navbar{
     width:100%;
     content:inherit;
@@ -879,9 +882,16 @@ color: white;
   }
  .background1{
     width: 100%;
-    overflow-x: hidden;
     height: 80vh;
   } 
+
+  .text{
+    font-size: 15px;
+  }
+  .txt2{
+    font-size: 25px;
+  }
+
   .shop{
     align-items: center;
     flex-direction: column;
@@ -894,48 +904,46 @@ color: white;
     align-items: center;
     margin: 30px;
   }
-
   .timer{
     width:100%;
     height: max-content;
     align-content: center;
     justify-content: center;
-    margin-left: 0%;
+    margin-left: 0;
   }
   .time{
     grid-template-columns: auto auto auto;
     grid-template-rows: auto auto auto auto;
-    width: fit-content;
+    justify-content: center;
   }
- 
   .types{
     flex-wrap: wrap;
   }
-
   .products{
     grid-template-columns: auto;
     grid-template-rows: auto auto auto auto;
     column-gap: 5px;
-
   }
-
   .foot2{
     flex-direction: column;
     height: max-content;
+    width: fit-content;
     align-items: center;
   }
-
   .payment,.shipping{
-    width: max-content;
-    flex-basis: 100%;
+    width: fit-content;
+    flex-basis: 90%;
   }
-      
   .foot3{
     grid-template-rows: auto auto auto;
     height: max-content;
+    width:fit-content;
     width: 100%;
   }
-  .sect1,.sect2,.sect3{
+  .sect1{
+    display: none;
+  }
+ .sect2,.sect3{
     height: max-content;
     padding:30px;
   }
@@ -946,6 +954,8 @@ color: white;
     width: 100%;
     text-align: center;
   }
+
+
 }
 
 
@@ -961,7 +971,6 @@ color: white;
   }
   .background1{
     width: 100%;
-    overflow-x: hidden;
     height: 80vh;
   }
   .shop{
@@ -1007,13 +1016,13 @@ color: white;
 
   .payment,.shipping{
     width: max-content;
-    flex-basis: 100%;
+    flex-basis: 90%;
   }
       
   .foot3{
     grid-template-rows: auto auto auto;
     height: max-content;
-    width: 100%;
+    width:100%
   }
   .sect1,.sect2,.sect3{
     height: max-content;
