@@ -906,7 +906,6 @@ color: white;
     grid-template-columns: auto auto auto;
     grid-template-rows: auto auto auto auto;
     width: fit-content;
-    margin-left: 120px;
   }
  
   .types{
@@ -987,7 +986,6 @@ color: white;
     grid-template-columns: auto auto auto;
     grid-template-rows: auto auto auto auto;
     width: fit-content;
-    margin-left: 130px;
   }
  
   .types{
